@@ -220,6 +220,12 @@ a:focus-visible{outline:3px solid var(--green);outline-offset:2px}
 .comp__grid>div,.ciclo>div,.tot__r>span{min-width:0}
 .mail{display:inline-block;margin:34px 0 0;padding:15px 34px;border-radius:40px;background:linear-gradient(96deg,var(--green-br),var(--blue-br));color:#0E1B34;font-weight:800;font-size:15px;user-select:all}
 .ciclo__n{min-width:108px}
+@media print{@page{size:A4;margin:14mm 12mm}
+.seclabel,.sectitle,.secsub,.tot__k{break-after:avoid;page-break-after:avoid}
+.ciclo,.comp,.tot,.band,.inc__c,.closing{break-inside:avoid;page-break-inside:avoid}
+.block{padding:16px 0!important}.secsub{margin-bottom:16px!important}
+.closing__logo,.foot__logo{display:none!important}.closing{padding:10px 0!important}.foot{padding:6px 0!important}
+.mail{background:none!important;padding:0!important;margin-top:14px!important}}
 @media (max-width:760px){.inc{grid-template-columns:1fr!important}}
 </style>
 </head>
